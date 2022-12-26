@@ -29,10 +29,10 @@
                     </template>
                     <template v-for="(item, index) in help.children">
                         <v-list-item
-                                :key="`${index}-${item.title}`"
-                                link
-                                :to="{path:item.link}"
-                                v-if="item.title === 'FAQ'"
+                            :key="`${index}-${item.title}`"
+                            link
+                            :to="{path:item.link}"
+                            v-if="item.title === 'FAQ'"
                         >
                             <v-list-item-icon></v-list-item-icon>
                             <v-list-item-content>
@@ -40,10 +40,10 @@
                             </v-list-item-content>
                         </v-list-item>
                         <v-list-item
-                                :key="`${index}-${item.title}`"
-                                link
-                                :href="item.link"
-                                v-else
+                            :key="`${index}-${item.title}`"
+                            link
+                            :href="item.link"
+                            v-else
                         >
                             <v-list-item-icon></v-list-item-icon>
                             <v-list-item-content>
@@ -58,9 +58,9 @@
                 <div class="pa-2">
                     <v-divider></v-divider>
                     <div
-                            v-if="!mini"
-                            class="py-2"
-                            style="display: flex; align-items: center"
+                        v-if="!mini"
+                        class="py-2"
+                        style="display: flex; align-items: center"
                     >
                         <div class="font-weight-bold">DICE: $0.001</div>
                         <v-spacer/>
@@ -84,9 +84,9 @@
             <v-toolbar-title v-if="$vuetify.breakpoint.width > 600">
                 <router-link to="/" style="text-decoration: none; color: inherit;">
                     <v-img
-                            :src="$vuetify.theme.isDark ? logo.light : logo.dark"
-                            alt="logo"
-                            width="160px"
+                        :src="$vuetify.theme.isDark ? logo.light : logo.dark"
+                        alt="logo"
+                        width="160px"
                     />
                 </router-link>
             </v-toolbar-title>
