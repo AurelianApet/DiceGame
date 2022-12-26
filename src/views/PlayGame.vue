@@ -10,11 +10,11 @@
                 </div>
                 <div class="canvas-box">
                     <canvas
-                            id="canvas"
-                            ref="canvas"
-                            @mousedown="this.onMouseDown"
-                            @mousemove="this.onMouseMove"
-                            @mouseup="this.onMouseUp"
+                        id="canvas"
+                        ref="canvas"
+                        @mousedown="this.onMouseDown"
+                        @mousemove="this.onMouseMove"
+                        @mouseup="this.onMouseUp"
                     ></canvas>
                 </div>
 
