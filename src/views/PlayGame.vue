@@ -46,14 +46,14 @@
                         <p class="mb-0 text-center">Past Record</p>
                         <div class="items">
                             <div
-                                    v-for="(item, index) in resultList"
-                                    :key="index"
-                                    class="item"
+                                v-for="(item, index) in resultList"
+                                :key="index"
+                                class="item"
                             >
                                 <div
-                                        v-for="(subItem, subIndex) in item"
-                                        :key="subIndex"
-                                        class="dice"
+                                    v-for="(subItem, subIndex) in item"
+                                    :key="subIndex"
+                                    class="dice"
                                 >
                                     <img :src="getLink(subItem)"/>
                                 </div>
