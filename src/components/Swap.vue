@@ -170,19 +170,7 @@ export default {
           this.getBalance()
           this.getReserves()
         })
-      }/* else if (this.case === 2) {
-        this.diceContract.methods.swapExactETHForTokens((this.outputAmount * Math.pow(10, 8)), this.walletState.walletAddress).send({ from: this.walletState.walletAddress, value: Math.pow(10, 18) * this.inputAmount, gas: 8000000 }
-        ).then(() => {
-          this.getBalance()
-          this.getReserves()
-        })
-      } else {
-        this.diceContract.methods.swapExactTokensForETH(this.inputAmount * Math.pow(10, 8), (this.outputAmount * Math.pow(10, 18)).toString(), this.walletState.walletAddress).send({ from: this.walletState.walletAddress, gas: 8000000 }
-        ).then(() => {
-          this.getBalance()
-          this.getReserves()
-        })
-      }*/
+      }
     },
 
     reverse() {
