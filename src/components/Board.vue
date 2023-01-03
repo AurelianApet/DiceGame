@@ -741,7 +741,6 @@ export default {
               clearInterval(ani);
             }
           }, 300);
-          //this.resultList = [this.resultDices].concat(this.resultList);
           break;
 
         case 41000:
